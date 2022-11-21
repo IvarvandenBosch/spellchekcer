@@ -98,6 +98,19 @@ footer {
   font-family: sans-serif;
 }
 
+.github {
+  position: absolute;
+  left: 5px;
+  bottom: 3px;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.github:hover {
+  fill: #007c40;
+  transition: all .4s;
+}
+
 @media (max-width: 550px) {
   .heading {
     font-size: clamp(3rem, 10vw, 2rem); 
