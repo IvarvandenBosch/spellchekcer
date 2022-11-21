@@ -7,7 +7,6 @@ A spell checker that uses the spell checker API
 Create an account [here](https://apilayer.com/marketplace/spell-api "here") and sign up to a free plan.
 
 **Step 2:**
-
 Once you have signed up there should be an API key waiting for you.  Copy your API code.
 
 **Step 3:**
