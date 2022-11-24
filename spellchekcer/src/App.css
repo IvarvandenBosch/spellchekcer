@@ -111,6 +111,39 @@ footer {
   transition: all .4s;
 }
 
+.dark {
+  background-color: #111111;
+  height: 100vh;
+}
+
+.dark form input {
+  background-color: #111111;
+  color: #fff;
+  border: solid rgb(83, 83, 83) 2px;
+}
+
+.theme-button {
+  border: none;
+  background-color: #fff;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color .2s;
+  border-radius: 5px;
+}
+
+.theme-button:hover,
+.dark .theme-button:hover {
+  background-color: rgba(158, 158, 158, 0.233);
+  transition: background-color .2s;
+}
+
+.dark .theme-button {
+  background-color: #111111;
+  border: none;
+  color: #fff;
+}
+
 @media (max-width: 550px) {
   .heading {
     font-size: clamp(3rem, 10vw, 2rem); 

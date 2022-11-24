@@ -1,5 +1,7 @@
 import './App.css';
 import { useState, useEffect} from 'react';
+import useLocalStorage from './useLocalStorage';
+import { IconMoon, IconSun } from '@tabler/icons';
 
 function Spellchekcer() {
   const [word, setWord] = useState()
@@ -8,7 +10,7 @@ function Spellchekcer() {
   const [loading, setLoading] = useState()
   var myHeaders = new Headers();
   
-  myHeaders.append("apikey", "YOUR API KEY");
+  myHeaders.append("apikey", "ygfNot99AP1jNm6hjUkFmd2Y3Uyt62dn");
 
   var requestOptions = {
     method: 'GET',
@@ -30,6 +32,8 @@ function Spellchekcer() {
   }
 
   const [myWord, setMyWord] = useState()
+  // false === Light, true === dark
+  const [darkMode, setDarkMode] = useLocalStorage(false)
   const myWords = ['dacne', 'canlde', 'sereously', 'birtsday', 'fency', 'cookei', 'expereince', 'buisness']
   const randomNum = Math.floor(Math.random() * myWords.length);
 
@@ -39,7 +43,8 @@ function Spellchekcer() {
 
 
   return (
-    <div className="main">
+    <main className={`${darkMode && 'dark'}`}>
+      <button className="theme-button" onClick={() => setDarkMode(prevMode => !prevMode)}>{darkMode ? <IconSun /> : <IconMoon />}</button>
       <h1 className='heading'>Spellchekcer</h1>
       <form action="" method='GET'>
         <input 
@@ -67,7 +72,7 @@ function Spellchekcer() {
           })}
         </section>
       </ul>
-    </div>
+    </main>
   );
 }
 
