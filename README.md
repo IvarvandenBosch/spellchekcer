@@ -1,5 +1,6 @@
-# spellchekcer
-A spell checker that uses the spell checker API
+# What is Spellchekcer?
+Spellchekcer is a React app that works together with spellchecker API, 
+it fetches the user input and collects words that might be the correct spelling of that word.
 
 ## Tutorial on how to set up with your own API key: 
 
