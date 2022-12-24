@@ -2,6 +2,7 @@
 Spellchekcer is a React app that works together with spellchecker API, 
 it fetches the user input and collects words that might be the correct spelling of that word.
 
+## Preview
 ![afbeelding](https://user-images.githubusercontent.com/78146502/209431029-52eada79-e4cf-45b1-bdd2-7ba8644c83b5.png)
 
 ## Tutorial on how to set up with your own API key: 
